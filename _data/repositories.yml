@@ -1,12 +1,9 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - patrick-may
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - patrick-may/MapMyShopping-FlutterApp
+  - patrick-may/CS-330-Final-Dijkstra-Visualization
+  - patrick-may/CS-232-Full-Stack-Fitness-Tracker
+  - patrick-may/Differential-Equations-Stock-Modeler
+  - patrick-may/Competetive-References
