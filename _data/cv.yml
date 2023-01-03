@@ -15,77 +15,127 @@
       institution: The College of Wooster, Wooster Ohio, United States
       year: 2020 - 2024
       description: 
-        - The College of Wooster is America's premier college for mentored undergraduate research. (About college here)
-        - Description 2.
-        - title: Description 3.
+        - >
+          The College of Wooster is America's premier college for mentored undergraduate research. It is located in Wooster, 
+          ohio, with approximately 2,000 students. For the past 10+ years, it has ranked as the best higher education institution for senior capstone 
+          projects. <a href="https://www.usnews.com/best-colleges/college-of-wooster-3037/overall-rankings" target="_blank">Read More</a>
+        
+        - title: Minor(s)
           contents:
-            - Sub-description 1.
-            - Sub-description 2.
+            - Mathematics
+            - Music
+        - "GPA : 4.0/4.0"
+        - title: Awards 
+          contents:
+          - College Scholar Award
+          - Music Performance Award
+          - Dean's List (every semester)
+
+- title: Tools and Skills
+  type: list
+  contents:
+    - <b><u>Programming Languages</u></b> - C++, Python, C, SQL, Dart
+    - <b><u>Tools</u></b> - Git(hub), Docker, WSL, Flutter, Flask, Jupyter, pandas, numpy, Microsoft/Google Suites
+    - <b><u>Programming Languages</u></b> - JavaScript (nodejs, react), Rust, Go, BaSH, polars, Wireshark
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Virtual Reality Lab Technician
+      institution: The College of Wooster
+      year: 2021 - ongoing
+      description: 
+        - Design and remodel lab to be a space for students to experience and research virtual reality
+        - Compile documentation of introductory virtual reality materials to help other students get started
+    
+    - title: Executive Vice Presdient
+      institution: Hans H. Jenny Investment Club
+      year: 2021 - ongoing
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Research and manage the student-run club's investment portfolio of ~$10 Million in assets, to outperform pegged metrics by more than 10%
+        - Network with graduates and businesses to bring educational guest speakers to present at the club for members educational and professional benefit
+        - Coordinate and distribute information about club activities to investment club members to increase involvement and participation
+        
+    - title: Software Engineering Researcher
+      institution: Carnegie Mellon University
+      year: Summer 2022
       description:
-        - Description 1.
-        - Description 2.
+        - Conducted novel research in the area of secure programming in computer science education
+        - Created a user study, gathered research subjects, and extracted knowledge from qualitative data
+        - Presented findings to world class professors, coworkers, and guests
+      
+    - title: New Student Mentor (ARCHer)
+      institution: The College of Wooster
+      year: Summer 2021
+      description: 
+        - Liaised between college peers, faculty, and staff through means such as email, Microsoft Teams, and Zoom
+        - Advised incoming first-year students on what courses would fit their personal and academic interests
+    
+    - title: Secretary
+      institution: Hans H. Jenny Investment Club
+      year: 2020 - 2021
+      # description:
+      #  - Managed student attendance and weekly club activities to keep all club members and interested students informed 
+      #  - Recruited multiple students to become more involved in the club by helping them make their first stock {buy, sell, research} motion
+      #  - Created a better archive system for club data to make retrieval and research by other students easier
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Trustee
+      institution: Hans H. Jenny Investment Club
+      year: 2020 - 2021
+      #description:
+      #  - Participated in club activities to learn more about finance, investing, and the stock market
+      #  - Researched a buy motion for approximately a $500,000 investment into a specific stock and answered club member's questions
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Projects
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: <a href="https://github.com/patrick-may/MapMyShopping-FlutterApp" target="_blank">MapMyShopping</a>
+      year: Fall 2022
+      description: A full-stack flutter application with a user-interface focus. Refer to <a href=""></a> for a more detailed write-up.
 
-- title: Honors and Awards
+    - title: <a href="https://github.com/patrick-may/CS-232-Full-Stack-Fitness-Tracker" target="_blank">CRUD Lifter</a>
+      year: Spring 2022
+      description: A flask application with a primary focus on using an normalized SQL Database. Refer to <a href=""></a> for a more detailed write-up.
+
+    - title: <a href="https://github.com/patrick-may/CS-330-Final-Dijkstra-Visualization" target="_blank">Dijkstra's Algorithm Visualizer</a>
+      year: Spring 2022
+      description: >
+        A graph animation to visualize the Dijkstra's Algorithm. Created primarily to assist in CS 330 - Computer Networking and Communications to better understand
+        the steps of the algorithm
+
+- title: Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2023
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - Goldwater Scholarship Nominee
+    - year: 2022
       items: 
-        - Max Planck Medal
+        - Ohio Wesleyan Programming Competition, First Place
+    - year: 2018
+      items:
+        - Canada Talks Pharma Highest Rated Presentation (Keynote Speech)
+    - year: 2013
+      items:
+        - Association of Fundraising Professionals Outstanding Youth in Philanthropy Award
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Software Engineering
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - back-end engineering - making things work, efficiently
+        - project management - the interpersonal connections and understandings that make a team function
+    - title: Cybersecurity
       items:
-        - Description 1.
-        - Description 2.
+        - penetration testing - hacking things on the offensive side
+        - secure development - desiging software with security as a primary consideration
+    - title: Human Computer Interaction
+      items:
+        - how computers work, interact, and intersect with the complex world we live in
+    
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Hobbies:</u> Weightlifting, Calisthenics, Cello Performance, Video Games, Competetive Programming
