@@ -55,4 +55,27 @@ Then, you would imagine the problem is pretty simple, correct? Just:
 *... not quite ...*
 
 ## xBrl (and why I won't be a business person)
-xBrl, or e**X**tensible **B**usiness **R**eporting **L**anguage is a *somewhat* standardized flavor of XML for understanding business reports from companies, such as 10-Ks, 8-Ks, 20-Fs (for foriegn companies), etc.
+xBrl, or e**X**tensible **B**usiness **R**eporting **L**anguage is a *somewhat* standardized flavor of XML for understanding business reports from companies, such as 10-Ks, 8-Ks, 20-Fs (for foriegn companies), etc. Without getting into the details of constructing specific API queries, it is easiest to get historical data of a **specific** xBrl tag. For example, if I identify the *Revenues* xBrl tag, then I can get the historical amounts for every form in a specific company's record. Then pipe this to filter for only yearly reports, and it *should* be easy to have a YoY percent change for our desired metric.
+
+However... there is a big assumption here, in that the company is going to *always* going to tag their choice financial data under the *exact* same xBrl tag. For example, here is a example output after cleaning and filtering a query on `$AAPL`:
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/aaplstats.png" title="Tagging Inconsitencies: See Revenue Column" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Here, it is obvious that the query for `revenue` didn't use the right xBrl tag. Looking into it, that column was made with `"RevenuesTotal"` as the API endpoint. So, below are two more graphics. One is another AAPL query with a different `Revenues` endpoint. Another is a query on a different company, *still* with the "RevenuesTotal" endpoint tag.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/aaplstats2.png" title="Changed AAPL Tag" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/peristats.png" title="xBrl Insanity" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+So here, we see the root of the issue: while companies tend to be *self consistent* in their business tags (but not always), they *differ* from business to business as far as I can tell. Additionally, there does not seem to be a completely standardized selection of which xBrl tag is used -- although there are a few that are the most common, it is entirely possible that some companies will use a completely different tag for a certain accounting number.
+
+I have faced a lot of challenge in trying to think of a *repeatable*, *short*, and *quick to-implement* solution to this problem, and have not had a ton of luck. For this scale of project, I believe it would be a rabbit hole to go down if I were to try and use CV parsing libraries to extract a specific xBrl tag, although larger companies and paid APIs do complete this service, I believe.
