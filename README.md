@@ -12,14 +12,14 @@ Jekyll
 ```
 
 # Goals
-- [ ] Construct HTML/CSS/JS website project
-- [ ] Host viewable and/or downloadable page of current resume
-- [ ] Links to social media accounts
-- [ ] In-browser viewing of prior projects 
+- [x] Construct HTML/CSS/JS website project
+- [x] Host viewable and/or downloadable page of current resume
+- [x] Links to social media accounts
+- [x] In-browser viewing of prior projects 
     - [ ] Intro to CS King Run game
-    - [ ] Djikstra's Algorithm visualizer
-    - [ ] MapMyShopping viewer
-- [ ] Blog and/or page that supports simple blog-like entries 
+    - [x] Djikstra's Algorithm visualizer
+    - [x] MapMyShopping viewer
+- [x] Blog and/or page that supports simple blog-like entries 
 
 # Timeline
 12/23/2022 - Repo creation and initial toying around phase
