@@ -3,7 +3,7 @@ layout: page
 title: Guest Lectures
 description: Lectures and speaking notes for select topics of MATH 130.
 img: assets/img/discreteimg.jpeg
-redirect: assets/pdf/lect1.pdf
+redirect: ../assets/pdf/lect1.pdf
 importance: 2
 category:  coursework
 ---
@@ -18,4 +18,6 @@ The first lecture I prepared was a broad introduction to Combinatorics:
     </div>
 </div>
 
-<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
+
+
+<a href="{{ page.cv_pdf | prepend: '../assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>

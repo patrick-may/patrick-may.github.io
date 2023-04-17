@@ -23,10 +23,11 @@ social: true  # includes social icons at the bottom of the page
 
 Thanks for stopping by :sunglasses:!
 
-I am a currently a computer science student at the College of Wooster. I am also minoring in Mathematics and Music. While I am a student first, I also am involved in various on-campus activities, such as:
-- **Vice President** of *Jenny Investment Club*
+I am a computer science student at the College of Wooster, minoring in Mathematics and Music. While I am a student first, I also am involved in various on-campus activities, such as:
+
 - **Teaching Assistant** for *MATH 130: Mathematical Foundations of Computing*
 - **Lab Technician** for Wooster's *Virtual Reality Lab*
+- **Trustee** of *Jenny Investment Club*
 - **Cellist** in the *Wooster Symphony*
 
 I currently find myself with too many computer science interests to pursue all at once. I enjoy creating a tangible product that comes along with software engineering. I also currently having a lot of fun self-teaching some introductory cybersecurity practices that are more of the 'IT' field. Finally, I enjoy the theoretical side of computer science, learning new math and algorithms (even though theoretical computer science is scary hard!)
