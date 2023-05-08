@@ -4,7 +4,7 @@
     - name: Full Name
       value: Patrick May
     - name: Location
-      value: Eastern United States
+      value: Wooster, Ohio | Pittsburgh, Pennsylvania
     - name: Languages
       value: English
 
@@ -34,28 +34,28 @@
 - title: Tools and Skills
   type: list
   contents:
-    - <b><u>Programming Languages</u></b> - C++, Python, C, SQL, Dart
-    - <b><u>Tools</u></b> - Git(hub), Docker, WSL, Flutter, Flask, Jupyter, pandas, numpy, Microsoft/Google Suites
-    - <b><u>Currently Learning</u></b> - JavaScript (nodejs, react), Rust, Go, BaSH, polars, Wireshark
+    - <b><u>Programming Languages</u></b> - C++, Python, C, Java, SQL, Dart, Haskell
+    - <b><u>Tools</u></b> - Git & Github, Docker, WSL, Flutter, Jupyter Notebook, polars, numpy, Microsoft/Google Suites
+    - <b><u>Currently Learning</u></b> - Zig, Rust, BaSH, PostgreSQL, Wireshark
 
 - title: Experience
   type: time_table
   contents:
+    - title: Zone Intern (Teaching Assistant)
+      institution: The College of Wooster
+      year: 2023 - ongoing
+      description:
+        - Assist students in solving problems and understanding various concepts within discrete math
+        - Lecture about select computer science topics and create handouts to aid in students learning throughout lessons
+        - Received professional development in areas of education, group management, and networking
+
     - title: Virtual Reality Lab Technician
       institution: The College of Wooster
       year: 2021 - ongoing
       description: 
         - Design and remodel lab to be a space for students to experience and research virtual reality
         - Compile documentation of introductory virtual reality materials to help other students get started
-    
-    - title: Executive Vice Presdient
-      institution: Hans H. Jenny Investment Club
-      year: 2021 - ongoing
-      description:
-        - Research and manage the student-run club's investment portfolio of ~$10 Million in assets, to outperform pegged metrics by more than 10%
-        - Network with graduates and businesses to bring educational guest speakers to present at the club for members educational and professional benefit
-        - Coordinate and distribute information about club activities to investment club members to increase involvement and participation
-        
+
     - title: Software Engineering Researcher
       institution: Carnegie Mellon University
       year: Summer 2022
@@ -70,7 +70,21 @@
       description: 
         - Liaised between college peers, faculty, and staff through means such as email, Microsoft Teams, and Zoom
         - Advised incoming first-year students on what courses would fit their personal and academic interests
-    
+
+    - title: Trustee
+      institution: Hans H. Jenny Investment Club
+      year: 2023 - ongoing  
+      description:
+        - Stepping away from executive position in the club in order to be able to devote more time towards my independent senior thesis
+        - Manage and perform fundamental analysis on various securities to recommend actions on our multi-million dollar portfolio which has outperformed pegged index by 16% on average annually
+    - title: Executive Vice President
+      institution: Hans H. Jenny Investment Club
+      year: 2022 - 2023
+      description:
+        - Research and manage the student-run club's investment portfolio of ~$10 Million in assets, to outperform pegged metrics by more than 10%
+        - Monitor portfolio risk and manage portfolio to keep risks within desired volatility parameters
+        - Manage officers and club activities to increase participation, engagement, and diversity
+
     - title: Secretary
       institution: Hans H. Jenny Investment Club
       year: 2020 - 2021
@@ -91,17 +105,23 @@
   contents:
     - title: <a href="https://github.com/patrick-may/MapMyShopping-FlutterApp" target="_blank">MapMyShopping</a>
       year: Fall 2022
-      description: A full-stack flutter application with a user-interface focus. Refer to <a href=""></a> for a more detailed write-up.
+      description: 
+        - Created a cross-platform mobile application using Flutter and Dart to assist in navigating big-box stores with asimple user interface, which we improved use and accessibilty by ∼60% through using focus groups
+        - Queried store RESTFul APIs to get store inventories, so that a shopping route based on a user’s shopping list using could be made.
+        - Constructed a NoSql database, Hive, to perform CRUD on user data much faster than other (No)SQL databases.
 
     - title: <a href="https://github.com/patrick-may/CS-232-Full-Stack-Fitness-Tracker" target="_blank">CRUD Lifter</a>
       year: Spring 2022
-      description: A flask application with a primary focus on using an normalized SQL Database. Refer to <a href=""></a> for a more detailed write-up.
+      description: 
+        - Created a full-stack web application to journal fitness data using Flask, for individual use
+        - Built a mySQL database normalized towards 3NF using SQL to store arbitrary amounts of user data.
+        - Wrote an API to interface to the database, and created many unit tests using Python to verify performance throughout development cycle
 
     - title: <a href="https://github.com/patrick-may/CS-330-Final-Dijkstra-Visualization" target="_blank">Dijkstra's Algorithm Visualizer</a>
       year: Spring 2022
-      description: >
-        A graph animation to visualize the Dijkstra's Algorithm. Created primarily to assist in CS 330 - Computer Networking and Communications to better understand
-        the steps of the algorithm
+      description: 
+        - Engineered a graph traversal algorithm visualizer using Python and NetworkX to display the process of Djikstra’s algorithm on any graph
+        - Animated the traversal through the graph using Matplotlib to help peers understand routing algorithms
 
 - title: Awards
   type: time_table
