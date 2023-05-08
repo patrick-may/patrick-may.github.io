@@ -37,4 +37,6 @@ In the summer of 2022, I learned a lot performing novel research as part of [Car
 
 In years prior, I have gained significant interpersonal networking and leadership skills through positions such as [student ARCHer](https://wooster.edu/new-students/arch/) at my college, presenting various Keynote speeches, and multiple other pieces of activism for the [Crohn's and Colitis Foundation](https://www.crohnscolitisfoundation.org/?_ga=2.256433355.1559959825.1672760857-605331151.1672760857&_gac=1.117230324.1672760857.CjwKCAiAwc-dBhA7EiwAxPRylL7jbQLNYwkMHAZC2XysOBc2f8SxeQpfNZock7sfpbuG69xhCGylZRoCMAwQAvD_BwE).
 
-I hope to explore industry work through a summer 2023 internship, and then I returning to Wooster to complete my [Senior Independent Study](https://wooster.edu/academics/research/is/) at Wooster, a year long exploration and involved, individual research project. 
+Feel free to reach out if any questions arise when perusing my portfolio -- happy to network about anything!
+
+-Patrick
