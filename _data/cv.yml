@@ -29,18 +29,27 @@
           contents:
           - College Scholar Award
           - Music Performance Award
-          - Dean's List (every semester)
+          - Dean's List 
+          - Edward Taylor Prize
 
 - title: Tools and Skills
   type: list
   contents:
-    - <b><u>Programming Languages</u></b> - C++, Python, C, Java, SQL, Dart, Haskell
-    - <b><u>Tools</u></b> - Git & Github, Docker, WSL, Flutter, Jupyter Notebook, polars, numpy, Microsoft/Google Suites
-    - <b><u>Currently Learning</u></b> - Zig, Rust, BaSH, PostgreSQL, Wireshark
+    - <b><u>Programming Languages</u></b> - C++, Python, Groovy, Java, SQL, C, Dart, Haskell, Zig, Rust
+    - <b><u>Tools</u></b> - Git & Github, Docker, Linux (WSL, Kali), Wireshark,  
+    - <b><u>Framework & Libraries</u></b> - polars, numpy, Jupyter Notebook, flask, Flutter, 
 
 - title: Experience
   type: time_table
   contents:
+    - title: QA Automation Engineer 
+      institution: Webstaurant Store 
+      year: Summer 2023 - ongoing
+      description:
+        - Complete 15+ automation testing tickets with an average complexity size of 24 hours per ticket.
+        - Utilize in-house Groovy framework built upon Selenium Grid for test creation, integration, and management.
+        - Analyze large production databases and create performant SQL queries based on observations.
+
     - title: Zone Intern (Teaching Assistant)
       institution: The College of Wooster
       year: 2023 - ongoing
@@ -49,13 +58,6 @@
         - Lecture about select computer science topics and create handouts to aid in students learning throughout lessons
         - Received professional development in areas of education, group management, and networking
 
-    - title: Virtual Reality Lab Technician
-      institution: The College of Wooster
-      year: 2021 - ongoing
-      description: 
-        - Design and remodel lab to be a space for students to experience and research virtual reality
-        - Compile documentation of introductory virtual reality materials to help other students get started
-
     - title: Software Engineering Researcher
       institution: Carnegie Mellon University
       year: Summer 2022
@@ -63,7 +65,14 @@
         - Conducted novel research in the area of secure programming in computer science education
         - Created a user study, gathered research subjects, and extracted knowledge from qualitative data
         - Presented findings to world class professors, coworkers, and guests
-      
+ 
+    - title: Virtual Reality Lab Technician
+      institution: The College of Wooster
+      year: 2021 - ongoing
+      description: 
+        - Design and remodel lab to be a space for students to experience and research virtual reality
+        - Compile documentation of introductory virtual reality materials to help other students get started
+
     - title: New Student Mentor (ARCHer)
       institution: The College of Wooster
       year: Summer 2021
@@ -77,6 +86,7 @@
       description:
         - Stepping away from executive position in the club in order to be able to devote more time towards my independent senior thesis
         - Manage and perform fundamental analysis on various securities to recommend actions on our multi-million dollar portfolio which has outperformed pegged index by 16% on average annually
+    
     - title: Executive Vice President
       institution: Hans H. Jenny Investment Club
       year: 2022 - 2023
@@ -103,6 +113,13 @@
 - title: Projects
   type: time_table
   contents:
+    - title:  <a href="https://github.com/patrick-may/Energy-Efficiency-Profiler" target="_blank">CowProf</a>
+      year: Spring 2022
+      description:
+        - A dynamic script analysis tool created off of Intel PowerLog3.0 and specific language logging wrappers.
+        - Culminated in a 25 page research paper about software profiling, energy optimization, etc.
+        - Gleaned meaningful insights from large logfiles using polars, a Rust-based dataframe and datawrangling library, for creating visualizations
+
     - title: <a href="https://github.com/patrick-may/MapMyShopping-FlutterApp" target="_blank">MapMyShopping</a>
       year: Fall 2022
       description: 
@@ -145,17 +162,12 @@
     - title: Software Engineering
       items: 
         - back-end engineering - making things work, efficiently
-        - project management - the interpersonal connections and understandings that make a team function
-    - title: Cybersecurity
+    - title: Sustainable Development
       items:
-        - penetration testing - hacking things on the offensive side
-        - secure development - desiging software with security as a primary consideration
-    - title: Human Computer Interaction
-      items:
-        - how computers work, interact, and intersect with the complex world we live in
+        - Understanding social and environmental impacts of software design choices, and making one that maximize universal good 
     
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Weightlifting, Calisthenics, Cello Performance, Video Games, Competetive Programming
+    - <u>Hobbies:</u> Competetive Programming, Calisthenics, Cello Performance, Video Gaming, Weightlifting,
