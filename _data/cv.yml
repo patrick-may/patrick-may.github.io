@@ -35,16 +35,22 @@
 - title: Tools and Skills
   type: list
   contents:
-    - <b><u>Programming Languages</u></b> - C++, Python, Groovy, Java, SQL, C, Dart, Haskell, Zig, Rust
+    - <b><u>Programming Languages</u></b> - C++, Python, Groovy, Java, Zig, C, Dart, R, Haskell, Rust, SQL
     - <b><u>Tools</u></b> - Git & Github, Docker, Linux (WSL, Kali), Wireshark,  
     - <b><u>Framework & Libraries</u></b> - polars, numpy, Jupyter Notebook, flask, Flutter, 
 
 - title: Experience
   type: time_table
   contents:
-    - title: QA Automation Engineer 
+    - title: Junior Quality Assurance Automation Engineer 1
+      institution: Webstauraunt Store
+      year: August 2023 - ongoing 
+      description:
+        - Sticking around part time during my fall senior semester, continuing and slightly expanding responsibilities from internship, with reduced weekly hours.
+
+    - title: QA Automation Engineer Intern
       institution: Webstaurant Store 
-      year: Summer 2023 - ongoing
+      year: Summer 2023
       description:
         - Complete 15+ automation testing tickets with an average complexity size of 24 hours per ticket.
         - Utilize in-house Groovy framework built upon Selenium Grid for test creation, integration, and management.
@@ -55,6 +61,7 @@
       year: 2023 - ongoing
       description:
         - Assist students in solving problems and understanding various concepts within discrete math
+        - Provide mentoring in fundamental data structures and algorithms class using C++
         - Lecture about select computer science topics and create handouts to aid in students learning throughout lessons
         - Received professional development in areas of education, group management, and networking
 
@@ -68,7 +75,7 @@
  
     - title: Virtual Reality Lab Technician
       institution: The College of Wooster
-      year: 2021 - ongoing
+      year: 2021 - 2023
       description: 
         - Design and remodel lab to be a space for students to experience and research virtual reality
         - Compile documentation of introductory virtual reality materials to help other students get started
@@ -113,6 +120,11 @@
 - title: Projects
   type: time_table
   contents:
+    - title: Static Analysis Energy Tool 
+      year: Fall 2023
+      descrition: 
+        - Analyzed LLVM Intermediate Representation and ARM assembly language of programs to compute expected energy costs of running program.
+
     - title:  <a href="https://github.com/patrick-may/Energy-Efficiency-Profiler" target="_blank">CowProf</a>
       year: Spring 2022
       description:
