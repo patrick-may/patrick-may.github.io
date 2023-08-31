@@ -30,7 +30,7 @@ My name is Patrick May, I am a 4th year computer science student at the College 
 - **Cellist** in the *Wooster Symphony*
 - **Captain/Enthusiast** in the *Wooster Competitive Programming Team*
 
-Currently I am embarking on my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. As a computer science major, I am personally interested in understanding *energy costs* of running programs. In my Junior Independent Study, a heavily whittled down semester long project, I worked towards *dynamic program analysis* by creating a simple profiling tool [::cow:: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). As a senior, I am working on making a *static analysis* tool for understanding energy costs of simple programs. More to come here.
+Currently I am embarking on my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. As a computer science major, I am personally interested in understanding *energy costs* of running programs. In my Junior Independent Study, a heavily whittled down semester long project, I worked towards *dynamic program analysis* by creating a simple profiling tool [:cow: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). As a senior, I am working on making a *static analysis* tool for understanding energy costs of simple programs. More to come here.
 
 In the summer of 2023, I gained a lot of experience as a quality assurance automation intern working at WebstaurantStore. More insights about my most recent summer experience can be found in my blog post [here](/blog/2023/webstaurant-qa-internship). 
 
