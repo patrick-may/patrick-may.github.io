@@ -168,3 +168,86 @@ But, this is all metadata. All I have is a TSV datafile, without any of the **fu
 
 # Selenium PDF Farm 
 
+No where near as long, nor as interesting of a subproblem to tackle. Given a long list of links to downloadable PDF forms of Independent Studies, I needed to go and download them. The one complication is that observing these rawtexts is behind an authentication step, as many are limited to only Wooster students (a primary reason why this dataset is NOT published for anyone's free use). My hackish workaround was to just let me manually log in before yielding control to the automation tool for download requests to all the different links on the page. The only semi-unique step here was adding extra profile steps so that pdf files would be automatically downloaded to a pre-specified folder (for me, an external drive):
+
+```py 
+
+    profile = {"plugins.plugins_list": [{"enabled": False,
+                                         "name": "Chrome PDF Viewer"}],
+               "download.default_directory"     : download_folder,
+               "download.prompt_for_download"   : False,
+               "download.directory_upgrade"     : True,
+               "download.extensions_to_open"    : "",
+               "plugins.always_open_pdf_externally" : True,
+               }
+    
+    options.add_experimental_option("prefs", profile)
+    
+```
+
+*I now have all the data collected, but not in an easily analyzable form for the stats project, nor in an easily tunable form for an AI, as far as I can tell.*
+
+Of note: I was only able to download rawtexts of ~5,500 Independent studies (both exemplar and non), due to embargo rules. There seems to be a blanket limitation for any IS from 2005 or earlier that makes them unable to be accessed.
+
+# Lexical Analysis 
+
+I snuffed out a `textcomplexity` python package on pip, but documentation on how to use it was relatively lax. Thankfully, due to the beauty of python, jupyter notebooks, a lonely and minorly alcoholic friday night, and smashing my head against the keyboard for 2 hours, I had a complete analysis script. It wasn't *good*, but functional. At a high level, for each PDF, it:
+
+- Parsed the PDF with PyPDF2
+- Extracted all text from the document 
+- Counted all pictures in the document 
+- Did some metadata cross referencing with invariants on the openworks generated front page 
+- Handed the raw text into a `Stanza` NLP pipeline to convert text to CONLL-U format 
+- Tossed the Conll-U into `textcomplexity` to get the end lexical statistics about the IS rawtext 
+- Wrote all data to a file
+
+There are many opportunities for failure here, so my script was littered with `try/except` control flow handling, which slowed down the script but made it more resilient to failures. So... I started running this on my laptop, and went to bed. 
+
+<centering><b>The next day, I had 250 complete results, with 750 failures</b></centering>
+
+Well. 
+
+That.
+
+Sucks?!?!
+
+Further digging into the script, and a desire to be able to use my laptop for like... schoolwork... I transitioned the jupyter notebook over to my Linux Desktop. Creating an entirely new python venv, redownloading all the dependencies... up and running again! So now, I ran the script and got more successes, but each paper was taking 5-10 minutes. Entirely too long! Some further digging, and I quickly identified the largest timesink of the program is converting rawtexts to `.conllu` format. Inside a stanza script, I wasn't utilizing my GPU, for dependency parsing, tokenizing, etc. etc. 
+
+Ok, GPU acceleration enabled on a GTX 1060 6GB (my computer is old, hush hush). Start this in the background and... run for 72 hours. Ran through all of the ISes at least! But with about a 50 % fail rate, primarily from 50% of the papers unable to be processed and converted to `.conllu`. I diagnose the error to be CUDA running out of memory. So **obviously**, the correct solution here is to 
+
+
+<centering><b>buy a new graphics card.</b></centering>
+
+A week later, I have an RTX 3060 12 GB swapped in. Lets run this script one more time... and, same issue. `CUDA Out Of Memory Error: ... Wants 17 GB (???), 1 GB Available` 
+Hmm. Maybe I should read the error stacktrace. Ah, its coming from Stanza's POS pipeline segment. Maybe I should [look at documentation](https://stanfordnlp.github.io/stanza/pos.html) about how to fix this. 
+
+Ok, lets set some limits on the pipeline processor:
+
+```py 
+    nlp = stanza.Pipeline(args.language, 
+        processors="tokenize,pos,lemma,depparse",
+        download_method=None,
+        use_gpu=True, # lets use GPU
+        logging_level='ERROR', 
+        pos_batch_size=1000  # limit part-of-speech batch size
+        )
+```
+
+Alright. Run this, still running into a few issues. A final workaround was to design a two-tiered processing pattern: First attempt to have the GPU analyze a paper, but if that fails, throw the CPU (and its much larger memory pool) at it compared to the GPU. After running this, I had **significantly** more luck with the analysis script, with an error rate of 15 some papers, ~<1%, compared to 75%+ in the first pass and 50% in the second pass.
+
+If you are a visual person, here is a graphic the sums up this entire analysis pipeline step:
+
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/dataprocpipeline.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+    </div>
+</div>
+<div class="caption">
+    Data scraping, parsing, and processing pipeline for Independent Studies
+</div>
+
+
+# Results 
+
+WIP...
+
