@@ -31,7 +31,7 @@ To be pompous, Independent Study is a very souped up version of a senior thesis 
 I am not experienced in the machine learning space, but with increasingly ease of accessibility of generative AI, for the last year or so I was playing around with a dream to tune a GPT to independent studies and see the results -- for humor's sake.  
 At this time, I was unaware of *where* I could collect IS training data, but at the beginning of the year I came across our college's [OpenWorks page](https://openworks.wooster.edu/). 
 
-<center>**Bingo.**</center>
+<center><b>Bingo.</b></center>
 
 Now I have a source for where to collect data, as there is an "Independent Studies" publications page on Openworks. I also was reviewing final project writeups at this time, and saw that my statistics class was very open ended. *This is a perfect excuse to harvest all this data* ~~for personal project use~~ for a course project. I just need to *do* the collection.
 
@@ -50,4 +50,121 @@ If I'm doing some webscraping, lets peek into what an IS page on openworks [look
     </div>
 </div>
 
+`Colly`, from the limited usage I interacted with it, feels almost 'functional'-style in how it operates. Lets do a quick look-over to haskell:
+
+```hs 
+
+fib1 :: (Integer, Integer) -> Integer
+fib1 0 = 1 
+fib1 1 = 1 
+fib1 n = fib1(n - 1) * fib2(n - 2)
+
+-- Or, in my very rudimentary haskell knowledge, we can understand pattern matching like so:
+
+<func_name> :: <Types...> -> <ReturnType>
+<func_name> <pattern1> = <response1>
+<func_name> <pattern2> = <response2>
+...
+
+```
+
+Long story short, we are defining certain **patterns** that, when encountered, have certain **responses**. For a fibonacci, if we reach 0 or 1, we are a known base case, otherwise for an unknown value, the response is a recursive functional call. It makes sense... to me... somewhat. Maybe this functional foray helps, perhaps not. But lets look at the main body of the webscraping code:
+
+```go 
+// define our collector variable
+c := colly.NewCollector(
+    // Don't go OOB
+    colly.AllowedDomains("openworks.wooster.edu"),
+)
+
+// rate limits
+c.Limit(&colly.LimitRule{
+    DomainGlob: "*openworks.wooster.*",
+    RandomDelay: 5 * time.Second,
+})
+
+// debugging purposes
+c.OnResponse(func(r *colly.Response) {
+    fmt.Println("\tVisited", r.Request.URL)
+})
+
+// Find and print all links in main body page, visit them
+c.OnHTML("p.article-listing", func (e *colly.HTMLElement) {
+    link := e.ChildAttr("a", "href")
+    fmt.Println("Visiting: ", link)
+    c.Visit(link)
+
+})
+
+// pagination 
+c.OnHTML("div.adjacent-pagination", func (e *colly.HTMLElement) {
+    currentPage := e.ChildText("li.active a")
+    fmt.Println("Current page is ", currentPage)
+    
+    nextpg := nextPageStr(currentPage)   
+    fstr := "div.adjacent-pagination li a[title='" + nextpg + "']"
+    nextPg := e.ChildAttr(fstr, "href")
+    c.Visit(nextPg)
+})
+
+// parse all data from metadata page
+c.OnHTML("div#content", func (e *colly.HTMLElement) {
+    downl := e.ChildAttr("a[id='pdf']", "href")
+    titl := e.ChildText("div#title > p")
+    aut := e.ChildText("p.author > a > strong")
+    abs := e.ChildText("div#abstract > p")
+    adv := e.ChildText("div#advisor1 > p")
+    dept := e.ChildText("div#subject_area > p")
+    reccite := e.ChildText("div#recommended_citation > p")
+    keys := e.ChildText("div#keywords > p")
+    pubdate := e.ChildText("div#publication_date > p")    
+    deg := e.ChildText("div#degree_granted > p")
+    doctype := e.ChildText("div#document_type > p")
+   
+    // strip all tabs
+    titl = replacer.Replace(titl)
+    aut = replacer.Replace(aut)
+    abs = replacer.Replace(abs)
+    adv = replacer.Replace(adv)
+    dept = replacer.Replace(dept)
+    reccite = replacer.Replace(reccite)
+    keys = replacer.Replace(keys)
+    pubdate = replacer.Replace(pubdate)
+    deg = replacer.Replace(deg)
+    doctype = replacer.Replace(doctype)
+
+    paper := paperMeta{downl, titl, aut, abs, adv, dept, reccite, keys, pubdate, deg, doctype}
+})
+
+c.visit("https://openworks.wooster.edu/independentstudy/")
+
+```
+
+Notably, we define these various **patterns** and specific responses that should occur when they are encountered. I.e. `c.OnHTML("<Go Selector>", func funcToCall (e *colly.HTMLElement{...}))`. The last part of this is the concept of 'Go Selectors' -- which are analagous to CSS Selectors, AFAIK. If you've done any web automation, there are many different ways to access various elements on the page (XPaths, Selectors, etc.), so while I am most comfortable with XPaths, trawling some simple Selectors with the aid of developer tools was trivial. 
+
+Our various encounterings of elements doesn't matter which order we define them in, which was the weirdest feeling for me. I really only needed 3 patterns to follow: follow pagination on the listings of IS pages, follow links to individual metadata pages, and harvest the data itself on those metadata pages.
+
+Ok, so if we are webscraping pages that look like the graphic above, lets make a container for an individual IS in underlying Go Lang:
+
+```go 
+type paperMeta struct {
+    downlink  string
+    title     string
+    author    string
+    abstract  string 
+    advisor   string
+    department    string 
+    reccitation   string 
+    keywords  string 
+    pubdate   string 
+    degree    string 
+    papertype string 
+}
+```
+
+alrighty... that isn't so bad! Structs seem pretty approachable, adjacent to C-style structs and arguably analagous to python's dataclasses. Throw in some information cleaning (stripping escape and spacing characters, for example), write all of them to file, and I now have **~11,600** observations for normal Independent Studies. If I just swap where the outfile goes, and change where the initial webscraper is pointed at, I got another **375** exemplar independent studies quite easily. 
+
+But, this is all metadata. All I have is a TSV datafile, without any of the **fun** information, like the underlying rawtexts of all these independent studies. To do get those, I needed to somehow *download* all the papers found at the links in the harvested metadata.
+
+# Selenium PDF Farm 
 
