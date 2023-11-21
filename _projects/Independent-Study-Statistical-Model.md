@@ -250,4 +250,5 @@ If you are a visual person, here is a graphic the sums up this entire analysis p
 # Results 
 
 WIP...
-
+<a href="{{ prepend: '../assets/pdf/isanalyzerpaper.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf">Link to PDF 1</a>
+<a href="{{ prepend: '../assets/pdf/isanalyzerpaper.pdf' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf">Link to PDF 2</a>
