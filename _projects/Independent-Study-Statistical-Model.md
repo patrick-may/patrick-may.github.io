@@ -249,4 +249,10 @@ If you are a visual person, here is a graphic the sums up this entire analysis p
 
 # Results 
 
-You can [read the first draft]({{site.baseurl}}/assets/pdf/isanalyzerpaper.pdf) of the paper at that link!
+You can [read the first draft]({{site.baseurl}}/assets/pdf/isanalyzerpaper.pdf) of the paper.
+
+The [final version]({{site.baseurl}}/assets/pdf/isanalyzerpaper_v2.pdf) is complete now too.
+
+Finally, if you are interested in the raw R code used to generate the graphics in the above papers in addition to many graphics that didn't make it into the final (8 page limited) paper, I am also making the [project appendix]({{site.baseurl}}/assets/pdf/isanalyzerpaper_appendix.pdf) public.
+
+If you are interested in the dataset or analysis pipeline itself, reach out to me directly. Thanks for reading!

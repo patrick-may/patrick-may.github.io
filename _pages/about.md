@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b>Computer Science</b> @ <a href='https://wooster.edu/'>The College of Wooster</a> | <b> Junior Quality Assurance Engineer 1</br> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a>
+subtitle: <b>Computer Science</b> @ <a href='https://wooster.edu/'>The College of Wooster</a> | <b> Junior Quality Assurance Automation Engineer 1</br> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a>
 
 profile:
   align: right
@@ -20,17 +20,18 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-:dog: Welcome! :smile_cat:
+:wave: Welcome! :wave:
 
 My name is Patrick May, I am a 4th year computer science student at the College of Wooster, minoring in Mathematics and Music. I pride myself for a strong focus on academics, but also just being busy. Some of my other college engagements include: 
 
-- **Teaching Assistant** for *MATH 130: Mathematical Foundations of Computing* 
-- **Lab Assistant** for *CSCI 120L: Introduction to Data Structures and Algorithms Lab*
+- **Course Assistant** for *CSCI 200: Algorithm Analysis* (Spring 2024)
+- **Teaching Assistant** for *MATH 130: Mathematical Foundations of Computing* (Spring 2023 - Fall 2023)
+- **Lab Assistant** for *CSCI 120L: Introduction to Data Structures and Algorithms Lab* (Fall 2023)
 - **Trustee** of the *Hans H. Jenny Investment Club*
 - **Cellist** in the *Wooster Symphony*
 - **Captain/Enthusiast** in the *Wooster Competitive Programming Team*
 
-Currently I am embarking on my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. As a computer science major, I am personally interested in understanding *energy costs* of running programs. In my Junior Independent Study, a heavily whittled down semester long project, I worked towards *dynamic program analysis* by creating a simple profiling tool [:cow: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). As a senior, I am working on making a *static analysis* tool for understanding energy costs of simple programs. More to come here.
+Currently I am embarking on my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. As a computer science major, I am personally interested in understanding *energy costs* of running programs. In my Junior Independent Study, a heavily whittled down semester long project, I worked towards *dynamic program analysis* by creating a simple profiling tool [:cow: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). As a senior, I am working on making a *static analysis* tool for understanding energy costs of simple programs. Additionally, I am both working part time for my past summer internship role as a QA Automation Engineer @ Webstaurant and searching for new graduate roles.
 
 In the summer of 2023, I gained a lot of experience as a quality assurance automation intern working at WebstaurantStore. More insights about my most recent summer experience can be found in my blog post [here](/blog/2023/webstaurant-qa-internship). 
 
