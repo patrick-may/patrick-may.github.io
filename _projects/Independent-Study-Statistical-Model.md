@@ -37,7 +37,7 @@ Now I have a source for where to collect data, as there is an "Independent Studi
 
 # Webscraping, Go, Colly, and You 
 
-My day job involves a lot of Selenium Automation in Groovy. My first thought for webscraping is exactly that -- lets do some kind of Selenium based script. After some quick ggoogling, I saw some discussion that webscraping with a browser automation tool may be using too powerful of a tool for the desired data collection. At the time, I was interested in poking around in Go, so a quick 'Go Webscraping' search later, I found myself point at [GoColly](https://go-colly.org/). Understand that this webscraping script is my first real `Go` code I've written, so some style may be forgone as I still cling onto my jumbled internalized program representation. 
+My day job involves a lot of Selenium Automation in Groovy. My first thought for webscraping is exactly that -- lets do some kind of Selenium based script. After some quick googling, I saw some discussion that webscraping with a browser automation tool may be using too powerful of a tool for the desired data collection. At the time, I was interested in poking around in Go, so a quick 'Go Webscraping' search later, I found myself point at [GoColly](https://go-colly.org/). Understand that this webscraping script is my first real `Go` code I've written, so some style may be forgone as I still cling onto my jumbled internalized program representation. 
 
 If I'm doing some webscraping, lets peek into what an IS page on openworks [looks like](https://openworks.wooster.edu/independentstudy/10559/)
 

@@ -35,16 +35,16 @@
 - title: Tools and Skills
   type: list
   contents:
-    - <b><u>Programming Languages</u></b> - C++, Python, Groovy, Java, Zig, C, Dart, R, Haskell, Rust, SQL
-    - <b><u>Tools</u></b> - Git & Github, Docker, Linux (WSL, Kali), Wireshark,  
-    - <b><u>Framework & Libraries</u></b> - polars, numpy, Jupyter Notebook, flask, Flutter, 
+    - <b><u>Programming Languages</u></b> - Python, C++, Groovy, Java, C, Zig, SQL, Dart, R, Haskell, Go, Arm ASM, Rust, Bash 
+    - <b><u>Tools</u></b> - Git & Github, Docker, Linux (WSL, Kali), Wireshark, Azure DevOps, MSSQS, Docker
+    - <b><u>Framework & Libraries</u></b> - polars, numpy, jupyter, flask, Flutter, 
 
 - title: Experience
   type: time_table
   contents:
     - title: Junior Quality Assurance Automation Engineer 1
       institution: Webstauraunt Store
-      year: August 2023+
+      year: August 2023 - Ongoing
       description:
         - Sticking around part time during my fall senior semester, continuing and slightly expanding responsibilities from internship, with reduced weekly hours.
 
@@ -56,12 +56,13 @@
         - Utilize in-house Groovy framework built upon Selenium Grid for test creation, integration, and management.
         - Analyze large production databases and create performant SQL queries based on observations.
 
-    - title: Zone Intern (Teaching Assistant)
+    - title: Teaching Assistant
       institution: The College of Wooster
       year: 2023 - ongoing
       description:
         - Assist students in solving problems and understanding various concepts within discrete math
         - Provide mentoring in fundamental data structures and algorithms class using C++
+        - Improve algorithm analysis course structure through seeking extended visualizations and practice problems
         - Lecture about select computer science topics and create handouts to aid in students learning throughout lessons
         - Received professional development in areas of education, group management, and networking
 
@@ -121,9 +122,17 @@
   type: time_table
   contents:
     - title: Static Analysis Energy Tool 
-      year: Fall 2023
+      year: Fall 2023 - Spring 2024
       descrition: 
-        - Analyzed LLVM Intermediate Representation and ARM assembly language of programs to compute expected energy costs of running program.
+        - Analyzed Arm assembly language of programs to compute expected energy costs of running program, utilizing the practical upper bounds solver (PUBS).
+
+    - title: <a href="https://patrick-may.github.io/projects/Independent-Study-Statistical-Model" target= "_blank">Independent Study Analyzer</a>
+      year: Fall 2023
+      description:
+        - Created a simple webscraper using Go to harvest 12,000 college theses papers’ metadata.
+        - Automated retrieval of all 6,000 accessible full-text pdf theses using python and selenium.
+        - Constructed a 6,000 entry by 92 observation dataset using GPU accelerated natural language pipelines and existing lexical analysis software.
+        - Performed exploratory data analysis and fitted various regression models to the lexical thesis data using R. 
 
     - title:  <a href="https://github.com/patrick-may/Energy-Efficiency-Profiler" target="_blank">CowProf</a>
       year: Spring 2022
@@ -168,17 +177,21 @@
       items:
         - Association of Fundraising Professionals Outstanding Youth in Philanthropy Award
 
-- title: Academic Interests
+- title: Career Interests 
   type: nested_list
   contents:
     - title: Software Engineering
       items: 
-        - back-end engineering - making things work, efficiently
-    - title: Sustainable Development
+        - back-end engineering
+        - systems engineering
+        - secure programming
+        - network development
+    - title: Quality Assurance
       items:
-        - Understanding social and environmental impacts of software design choices, and making one that maximize universal good 
+        - QA Automation
+        - API testing
+        - documentation development 
     
-
 - title: Other Interests
   type: list
   contents:

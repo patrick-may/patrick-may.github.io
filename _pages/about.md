@@ -22,11 +22,9 @@ social: true  # includes social icons at the bottom of the page
 
 :wave: Welcome! :wave:
 
-My name is Patrick May, I am a 4th year computer science student at the College of Wooster, minoring in Mathematics and Music. I pride myself for a strong focus on academics, but also just being busy. Some of my other college engagements include: 
+My name is Patrick May, I am a 4th year computer science student at the College of Wooster, minoring in Mathematics and Music. My specific interests in the software development world are on lower level development, energy efficient computing, and secure programming. Beyond the technical, I want to use my interdisciplinary experience as a liberal arts student to understand the broader context of where technology fits into our current world. My current college commitments include: 
 
 - **Course Assistant** for *CSCI 200: Algorithm Analysis* (Spring 2024)
-- **Teaching Assistant** for *MATH 130: Mathematical Foundations of Computing* (Spring 2023 - Fall 2023)
-- **Lab Assistant** for *CSCI 120L: Introduction to Data Structures and Algorithms Lab* (Fall 2023)
 - **Trustee** of the *Hans H. Jenny Investment Club*
 - **Cellist** in the *Wooster Symphony*
 - **Captain/Enthusiast** in the *Wooster Competitive Programming Team*
