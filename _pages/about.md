@@ -2,17 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b>Computer Science</b> @ <a href='https://wooster.edu/'>The College of Wooster</a> | <b> Junior Quality Assurance Automation Engineer 1</br> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a>
+subtitle: <b>Computer Science</b> @ <a href='https://wooster.edu/'>The College of Wooster</a> | <b> Junior Quality Assurance Automation Engineer 1</br> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a> | Incoming <b>New Analyst</b> @ <a href="https://www.bnymellon.com/">BNY Mellon</b>
 
 profile:
   align: right
   image: profile-2024.png 
   image_circular: false # crops the image to make it circular
   address: >
-    <p> pmay24 [at] wooster.edu </p>
-    <p>PO: 1189 Beall Avenue</p>
-    <p>C 2175 </p>
-    <p>Wooster, Ohio 44691</p>
+    <p> may.patrick [at] proton.me </p>
   
 news: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -20,16 +17,13 @@ social: true  # includes social icons at the bottom of the page
 
 ---
 
-:wave: Welcome! :wave:
+:wave: Hello! 
 
-My name is Patrick May, I am a 4th year computer science student at the College of Wooster, minoring in Mathematics and Music. My specific interests in the software development world are on lower level development, energy efficient computing, and secure programming. Beyond the technical, I want to use my interdisciplinary experience as a liberal arts student to understand the broader context of where technology fits into our current world. My current college commitments include: 
+My name is Patrick May, I am a new graduate that recently finished my computer science degree at the College of Wooster, minoring in Mathematics and Music. My specific interests in the software development world are on programming languages and program analysis, both static and dynamic. My quest of understanding the ennumerable abstractions in modern day software is always ongoing as well. I scratch my artistic itch through playing my cello both individually and in a larger group. 
+Currently, I am transitioning from my undergraduate experience to full time work in my field of study (an incredibly lucky position).
+Hence, I am not currently looking for further work opportunities, but am always happy to chat.
 
-- **Course Assistant** for *CSCI 200: Algorithm Analysis* (Spring 2024)
-- **Trustee** of the *Hans H. Jenny Investment Club*
-- **Cellist** in the *Wooster Symphony*
-- **Captain/Enthusiast** in the *Wooster Competitive Programming Team*
-
-Currently I am embarking on my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. As a computer science major, I am personally interested in understanding *energy costs* of running programs. In my Junior Independent Study, a heavily whittled down semester long project, I worked towards *dynamic program analysis* by creating a simple profiling tool [:cow: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). As a senior, I am working on making a *static analysis* tool for understanding energy costs of simple programs. Additionally, I am both working part time for my past summer internship role as a QA Automation Engineer @ Webstaurant and searching for new graduate roles. My personal software interests lie within **performance** and **efficiency** engineering existing systems.
+In my final year of undergrad, I completed my [Senior Independent Thesis](https://wooster.edu/academics/research/is/) as part of my requirements for graduation. I personally find energy costs of programming to be a fascinating area of research, so my senior thesis ended up being a preliminary expedition into the field of static analysis in the context of energy modeling of the ARM assembly language. As a junior, I investigated *dynamic program analysis* by creating a simple profiling tool [:cow: Prof](https://github.com/patrick-may/Energy-Efficiency-Profiler). 
 
 In the summer of 2023, I gained a lot of experience as a quality assurance automation intern working at WebstaurantStore. More insights about my most recent summer experience can be found in my blog post [here](/blog/2023/webstaurant-qa-internship). 
 
