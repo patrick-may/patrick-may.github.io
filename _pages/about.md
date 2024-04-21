@@ -6,7 +6,7 @@ subtitle: <b>Computer Science</b> @ <a href='https://wooster.edu/'>The College o
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: profile-2024.png 
   image_circular: false # crops the image to make it circular
   address: >
     <p> pmay24 [at] wooster.edu </p>
