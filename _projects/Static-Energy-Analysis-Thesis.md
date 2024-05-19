@@ -2,7 +2,7 @@
 layout: page
 title: Static Energy Analysis Thesis 
 description: senior undergrad thesis at the college of wooster 
-img: assets/pdf/seniorthesis-poster.pdf
+img: assets/pdf/seniorthesisposter.pdf
 importance: -1
 category: coursework
 ---
