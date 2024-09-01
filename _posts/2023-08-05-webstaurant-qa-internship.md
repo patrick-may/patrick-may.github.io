@@ -6,7 +6,7 @@ description: long-form ramblings about summer foray into qa automation industry 
 categories: update
 ---
 
-Summer 2023 is closing up! In an effort to confirm my knowledge and experiences from my summer internship, I will do my best to 'teach' is to the bottomless internet void!
+Summer 2023 is closing up! In an effort to confirm my knowledge and experiences from my summer internship, I will do my best to 'teach' is to the bottomless internet void.
 
 # Prior
 
