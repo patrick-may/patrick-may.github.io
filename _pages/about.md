@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <b>Software Engineer</b> @ <a href="https://www.bnymellon.com/">BNY Mellon</b> | formerly <b> Quality Assurance Automation Engineer </br> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a> | <b>Computer Science Graduate</b> @ <a href='https://wooster.edu/'>The College of Wooster</a>  
+subtitle: <b>Software Engineer</b> @ <a href="https://www.bnymellon.com/">BNY Mellon</a> | formerly  <b>Quality Assurance Automation Engineer </b> @ <a href="https://www.webstaurantstore.com/"> Webstaurant Store </a> | <b>Computer Science Graduate</b> @ <a href='https://wooster.edu/'>The College of Wooster</a>  
 
 profile:
   align: right
