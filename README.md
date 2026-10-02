@@ -1,31 +1,38 @@
-# patrick-may.github.io
-A personal portfolio website, that along the way I am pushing myself to learn more of Java Script.
+A personal website filled from alfolio:
 
-As github pages has some specific requirements in what it can use to host a website, I am using *Jekyll* to get something started, as opposed to a nodejs app that I initially started with. The main documentation I am starting from is found [here](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll).
+# al-folio
 
-Created by: Patrick May
+<div align="center">
 
-# Technologies Used
-```
-HTML/CSS
-Jekyll
-```
+[![Preview](readme_preview/al-folio-preview.png)](https://alshedivat.github.io/al-folio/)
 
-# Goals
-- [x] Construct HTML/CSS/JS website project
-- [x] Host viewable and/or downloadable page of current resume
-- [x] Links to social media accounts
-- [x] In-browser viewing of prior projects 
-    - [ ] Intro to CS King Run game
-    - [x] Djikstra's Algorithm visualizer
-    - [x] MapMyShopping viewer
-- [x] Blog and/or page that supports simple blog-like entries 
+**A simple, clean, and responsive [Jekyll](https://jekyllrb.com/) starter for academic websites.**
 
-# Timeline
-12/23/2022 - Repo creation and initial toying around phase
+_In `v1.x`, al-folio is a **thin starter, not a theme**: the runtime ships as independently versioned plugin gems, so you pick up fixes and features by bumping a pinned version in your `Gemfile` instead of merging theme internals into your site._
 
-12/31/2022 - Documentation update, more fleshed out readme and some minor progress in project structure
+---
 
-12/31/2022 - Jekyll refactor
+[![deploy](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml/badge.svg)](https://github.com/alshedivat/al-folio/actions/workflows/deploy.yml)
+[![Maintainers](https://img.shields.io/badge/maintainers-4-success.svg)](#maintainers)
+[![GitHub contributors](https://img.shields.io/github/contributors/alshedivat/al-folio.svg)](https://github.com/alshedivat/al-folio/graphs/contributors/)
 
-1/2/2022 - Restarted 3rd time, this time forking off popular pre-built template [al-folio](https://github.com/alshedivat/al-folio)
+[![Docker Image Version](https://img.shields.io/docker/v/amirpourmand/al-folio?sort=semver&label=docker%20image&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Image Size](https://img.shields.io/docker/image-size/amirpourmand/al-folio?sort=date&label=docker%20image%20size&color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+[![Docker Pulls](https://img.shields.io/docker/pulls/amirpourmand/al-folio?color=blueviolet)](https://hub.docker.com/r/amirpourmand/al-folio)
+
+[![GitHub release](https://img.shields.io/github/v/release/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/releases/latest)
+[![GitHub license](https://img.shields.io/github/license/alshedivat/al-folio?color=blue)](https://github.com/alshedivat/al-folio/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/alshedivat/al-folio)](https://github.com/alshedivat/al-folio/fork)
+
+[![Code Wiki](https://img.shields.io/badge/Code_Wiki-ask_about_repo-blue?logo=googlegemini)](https://codewiki.google/github.com/alshedivat/al-folio)
+[![DeepWiki](https://img.shields.io/badge/DeepWiki-ask_about_repo-lightcyan)](https://deepwiki.com/alshedivat/al-folio)
+
+</div>
+
+## License
+
+al-folio is available as open source under the terms of the [MIT License](https://github.com/alshedivat/al-folio/blob/main/LICENSE).
+
+Originally, **al-folio** was based on the [\*folio theme](https://github.com/bogoli/-folio) (published by [Lia Bogoev](https://liabogoev.com) and under the MIT license). Since then, it got a full re-write of the styles and many additional cool features.
+>>>>>>> v1.2
